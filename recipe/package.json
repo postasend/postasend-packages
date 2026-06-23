@@ -1,0 +1,26 @@
+{
+  "name": "@postasend/recipes",
+  "version": "0.1.0",
+  "description": "PostaSend integration recipes and starter examples",
+  "private": false,
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "postasend",
+    "email",
+    "recipes",
+    "examples"
+  ],
+  "author": "PostaSend",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/postasend/recipes"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.0",
+    "postasend": "workspace:*"
+  }
+}
