@@ -29,11 +29,13 @@ export class EmailsResource {
   }
 
   stats(options: EmailStatsOptions = {}) {
-    return this.http.get('/emails/stats', options as Record<string, string>);
+    const { from, to, tag } = options;
+    return this.http.get('/emails/stats', { from, to, tag });
   }
 
   chart(options: EmailChartOptions) {
-    return this.http.get('/emails/chart', options as Record<string, string>);
+    const { from, to } = options;
+    return this.http.get('/emails/chart', { from, to });
   }
 
   listSuppressions(options: { page?: number; perPage?: number } = {}) {

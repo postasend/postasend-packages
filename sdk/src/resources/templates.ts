@@ -9,7 +9,8 @@ export class TemplatesResource {
   }
 
   list(options: ListOptions = {}) {
-    return this.http.get('/templates', options);
+    const { page, perPage } = options;
+    return this.http.get('/templates', { page, perPage });
   }
 
   get(idOrAlias: string) {
