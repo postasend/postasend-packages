@@ -1,6 +1,6 @@
 {
   "name": "postasend",
-  "version": "0.2.0",
+  "version": "0.2.2",
   "description": "Official Node.js SDK for the PostaSend email API",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -31,7 +31,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/postasend/postasend-node.git"
+    "url": "git+https://github.com/postasend/postasend-packages.git"
   },
   "devDependencies": {
     "tsup": "^8.0.0",
